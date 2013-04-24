@@ -1,44 +1,40 @@
+def photoPicker
 
-class Photograph
-  def initialize(orientation, composition)
-    @orientation = orientation
-    @composition = composition
-  end
+	photographs = [
+
+	  ['photo1', 'horizontal', 'pair'],
+
+	  ['photo2', 'vertical', 'single'],
+
+	  ['photo3', 'vertical', 'pair'],
+
+	  ['photo4', 'horizontal', 'pair'],
+
+	  ['photo5', 'horizontal', 'single'],
+
+	  ['photo6', 'vertical', 'single'],
+
+	  ['photo13', 'vertical', 'pair'],
+
+	  ['photo14', 'vertical', 'single'],
+
+	  ['photo16', 'horizontal', 'pair']
+
+	 ]
+
+	myPhoto = photographs.sample
+	puts photographs.sample[0]+".jpg"
+	return photographs.sample[0]+photographs.sample[1]+photographs.sample[2]
 end
 
+photoPicker
 
-  photo1 = Photograph.new('horizontal', 'pair') {file "curiosity1.jpg"}
+def photoMatcher(oldPhoto)
+	myCurrentPhoto = photoPicker
 
-  photo2 = Photograph.new('vertical', 'single') {file "curiosity2.jpg"}
-
-  photo3 = Photograph.new('vertical', 'pair') {file "curiosity3.jpg"}
-
-  photo4 = Photograph.new('horizontal', 'pair') {file "curiosity4.jpg"}
-
-  photo5 = Photograph.new('horizontal', 'single') {file "curiosity5.jpg"}
-
-  photo6 = Photograph.new('vertical', 'single') {file "curiosity6.jpg"}
-
-  photo13 = Photograph.new('vertical', 'pair') {file "curiosity1.jpg"}
-
-  photo14 = Photograph.new('vertical', 'single') {file "curiosity1.jpg"}
-
-  photo16 = Photograph.new('horizontal', 'pair') {file "curiosity16.jpg"}
-
-class Matcher
-	def pickPhoto
-	  nums = [1,2,3,4,5,6,13,14,16]
-	  photoNum = nums.sample
-	  puts "photo" + photoNum.to_s
-	  return photoNum
+	if myCurrentPhoto[1]==myNewPhoto[1] && myCurrentPhoto[2]==myNewPhoto[2] then
+		puts myCurrentPhoto[0]+".jpg"+myNewPhoto[1]+".jpg"
 	end
+end
 
-
-	def display(pickPhoto)
-		Photograph.orientation_get(@orientation)
-		if Photograph.orientation==horizontal
-			puts "I am horizontal"
-		else
-			puts "I am vertical"
-		end
-	end
+photoMatcher(photoPicker)
