@@ -1,5 +1,7 @@
+<% myPhotopair = Photopair.new %>
 <a href="" class="btn">New Couple</a>
 <div>
-	<img class="left" src="#"/>
-	<img class="right" src="#"/>
+	<img class="left" src="/img/<%= myPhotopair.firstphoto[0]+".jpg"%>"/>
+	<span></span>
+	<img class="right" src="/img/<%= myPhotopair.secondphoto[0]+".jpg"%>"/>
 </div>

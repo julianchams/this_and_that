@@ -1,11 +1,29 @@
+.btn {
+	position: relative;
+
+}
+
+div {
+	height: auto;
+	max-width: 100%;
+}
+
 img {
-  height: 70%;
+  height: auto;
+  max-width: 47%;
+}
+
+span {
+	height: auto;
+	max-width: 2%;
 }
 
 img.left {
 	float: left;
+	padding-left: 2%;
 }
 
 img.right {
 	float: right;
+	padding-right: 2%;
 }
