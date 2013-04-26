@@ -1,8 +1,6 @@
-.btn {
-	position: relative;
-
+html, body {
+	height: auto;
 }
-
 div {
 	height: auto;
 	max-width: 100%;
@@ -26,4 +24,18 @@ img.left {
 img.right {
 	float: right;
 	padding-right: 2%;
+}
+
+a.button {
+	background: white;
+}
+
+a.button:hover {
+	color: black;
+	text-decoration: none;
+}
+
+.funnybutton {
+	position: relative;
+	top: 30px;
 }

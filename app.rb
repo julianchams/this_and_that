@@ -22,4 +22,9 @@ class BigApp < Sinatra::Application
   get "/stylesheet.css" do
     erb :styles, :layout => false
   end
+
+  get "/css/button.css" do
+    sass :button, :layout => false
+  end
+
 end
