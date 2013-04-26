@@ -1,9 +1,15 @@
 <% myPhotopair = Photopair.new %>
-<div>
-	<img class="left" src="/img/<%= myPhotopair.firstphoto[0]+".jpg"%>"/>
-	<span></span>
-	<img class="right" src="/img/<%= myPhotopair.secondphoto[0]+".jpg"%>"/>
-</div>
-<div class="funnybutton">
-	<a href="" class="button">not funny</a>
+<div class="container">
+
+	<div class="images">
+		<img class="left" src="/img/<%= myPhotopair.firstphoto[0]+".jpg"%>"/>
+		<img class="right" src="/img/<%= myPhotopair.secondphoto[0]+".jpg"%>"/>
+	</div>
+
+	<div>
+		<div class="funnybutton">
+		<a href="" class="button">not funny</a>
+		</div>
+	</div>
+
 </div>
