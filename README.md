@@ -17,9 +17,9 @@ You can access it by going to http://this-that.herokuapp.com
 *    Go to the folder where you want to create the local copy of the site
 
 ```
-$cd Desktop
-$git clone https://github.com/julianchams/this_and_that.git
-$cd this_and_that
+$ cd Desktop
+$ git clone https://github.com/julianchams/this_and_that.git
+$ cd this_and_that
 $ bundle install
 $ bundle exec shotgun
 ```

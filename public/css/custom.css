@@ -1,39 +1,19 @@
-html, body {
-	height: auto;
-}
-
-div.container {
-	position: fixed;
-	top: 0;
-	padding-top: 14px;
-}
-
-div.images {
-	height: auto;
-	max-width: 100%;
-}
-
-img {
-  height: auto;
-  max-width: 47%;
-}
-
-span {
-	height: auto;
-	max-width: 2%;
-}
-
 img.left {
-	float: left;
-	padding-left: 2%;
-	padding-right: 1%;
+	float:left;
+	padding-left: 5%;
+	padding-right: 2%;
 }
 
 img.right {
 	float: right;
-	padding-right: 2%;
-	padding-left: 1%;
+	padding-right: 5%;
+	padding-left: 2%;
+}
 
+img {
+	width: auto;
+	max-width: 47%;
+	max-height: 70%;
 }
 
 a.button {
@@ -46,6 +26,7 @@ a.button:hover {
 }
 
 .funnybutton {
-	position: relative;
-	top: 30px;
+	position: absolute;
+	left: 50%;
+	margin-left: -100%;
 }
