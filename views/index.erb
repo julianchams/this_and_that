@@ -1,8 +1,16 @@
 <% myPhotopair = Photopair.new %>
 <div>
 	<div class="images">
-		<img class="left" src="/img/<%= myPhotopair.firstphoto[0]+".jpg"%>"/>
-		<img class="right" src="/img/<%= myPhotopair.secondphoto[0]+".jpg"%>"/>
+
+		<div class="left" data-src="/img/<%= myPhotopair.firstphoto[0]+"_small.jpg"%>"></div>
+        <div class="left" data-src="/img/<%= myPhotopair.firstphoto[0]+"_medium.jpg"%>" data-media="(min-width: 400px)"></div>
+        <div class="left" data-src="/img/<%= myPhotopair.firstphoto[0]+"_large.jpg"%>" data-media="(min-width: 800px)"></div>
+        <div class="left" data-src="/img/<%= myPhotopair.firstphoto[0]+"_extralarge.jpg"%>" data-media="(min-width: 1000px)"></div>
+
+		<div class="right" data-src="/img/<%= myPhotopair.secondphoto[0]+"_small.jpg"%>"></div>
+        <div class="right" data-src="/img/<%= myPhotopair.secondphoto[0]+"_medium.jpg"%>" data-media="(min-width: 400px)"></div>
+        <div class="right" data-src="/img/<%= myPhotopair.secondphoto[0]+"_large.jpg"%>" data-media="(min-width: 800px)"></div>
+        <div class="right" data-src="/img/<%= myPhotopair.secondphoto[0]+"_extralarge.jpg"%>" data-media="(min-width: 1000px)"></div>
 	</div>
 
 	<div class="funnybutton">
